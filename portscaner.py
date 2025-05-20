@@ -56,6 +56,7 @@ def port_scanner(port, host):
             print(colored(f"\n[+] Port {port} is open", 'green'))
 
     except (socket.timeout, ConnectionRefusedError):
+       print(colored(f"\n[x] Port {port} is closed", 'red'))
        pass
 
     finally:
