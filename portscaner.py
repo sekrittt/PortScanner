@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 import socket
-from termcolor import colored
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import signal
 import sys
 
-
+def colored (str, *args):
+    return str
 open_sockets = []
 
 def def_handler(sig, frame):
